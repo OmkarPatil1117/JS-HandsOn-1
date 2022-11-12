@@ -260,5 +260,112 @@
             }
           };
     </pre> <hr>
+    </div>
+    <nav>
+        <h1 style="text-align: center; color: white;">JAVASCRIPT HANDSON 3</h1>
+        <p style="text-align: center; color: white;">Iteration Statements</p>
+     </nav>
+     <div class="container">
+        <div class="qus">
+            <strong> 1.Find the number of digits <br>
+                Take a number from the user and print the count of digits in that number. <br>
+                Note: You have to complete Find_Digits. No need to take any input. <br>
+            </strong>
+        </div>
+        <pre>
+            const Find_Digits = (N) => 
+            {
+            return N.toString().length;
+            };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong> 2.Among all the digits from 0−9, PrepBuddy likes number 5. He has a number and wants you to find out the number of times 5 occurred in the given number. <br>
+                Note: You have to complete Find_Five.No need to take any input. <br>
+            </strong>
+        </div>
+        <pre>
+        const Find_Five = (N) => 
+        {
+            var c = 0;
+            while (N > 0)
+            {
+                if (N % 10 == 5)
+                    c++;
+                N = parseInt(N / 10);
+            }
+            return c;
+        };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong> 3. You are given an integer N, and your task is to find the sum of all the even integers starting from 1 upto N (N inclusive). <br>
+            Note: You have to complete findSum function. No need to take any input. 
+            </strong>
+        </div>
+        <pre>
+            const findSum = (n) => {
+                var sum = 0;
+                  for(i=0; i<=n; i++) {
+                      if(i%2===0) 
+                      sum += i;
+                  }
+                  return sum;
+              };              
+        </pre> <hr>
+
+        <div class="qus">
+            <strong> 4. Write a program that takes a number from the user and get the sum of the digits present in the number. <br>
+                Note: You have to complete Number_Sum. No need to take any input. 
+            </strong>
+        </div>
+        <pre>
+            const Number_Sum = (N) => 
+                {
+                    var sum = 0;
+                    while (N != 0) {
+                        sum += N % 10;
+                        N = parseInt(N / 10);
+                    }
+                    return sum
+                };           
+        </pre> <hr>
+
+        <div class="qus">
+            <strong> 5. Write a program which takes  a number from user and print all odd numbers in between 2 and N, but print 2 first. <br>
+                Note: You have to complete Print_Odd. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Print_Odd = (N) => 
+            {
+                for(i=2; i<=N; i++) {
+                if(i%2 != 0) {
+                    console.log(i);
+                } else if(i == 2) {
+                    console.log(i);
+                }
+                }
+            };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong> 6. Write a program which ask user for no of lines and print a pattern using an asterik . <br>
+                Note: You have to complete Print_pattern. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Print_pattern = (N) => 
+            {
+              var i,j;
+                for(i=1; i <= N; i++){
+                 for(j=1; j<=i; j++){
+                    process.stdout.write("*"); 
+                 }
+                  console.log('\n');
+                 }
+            };
+        </pre> <hr>
+     </div>
 </body>
 </html>
