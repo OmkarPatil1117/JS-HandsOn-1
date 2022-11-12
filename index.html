@@ -112,6 +112,51 @@
                 return b
              };
         </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            6. You are provided with two numbers A and B where A as  divisor and B as  dividend.Your task is find the remainder. <br>
+            Note: You have to complete Find_the_remainder function. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Find_the_remainder = (a,b) => {
+                return b%a
+              };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            7. You are provided with two numbers A and B. Your task is to multiply these two numbers. <br>
+            Note: You have to complete Multiply_two_number function. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Multiply_two_number = (a,b) => {
+                return a * b
+            };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            8. Shyam has got his marks in three subjects as A, B, and C (out of 100).Write a program to calculate his total marks and his average. <br>
+            Note: You have to complete Sum and Average functions. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Sum = (A, B, C) => 
+            {
+            return  A + B + C
+            };
+
+            const Average = (A, B, C) => 
+            {
+            var a = A + B + C
+            var avg = a/3
+            return avg
+            };
+        </pre> <hr>
+
     </div>
  <nav>
     <h1 style="text-align: center; color: white;">JAVASCRIPT HANDSON 2</h1>
@@ -239,7 +284,7 @@
 
     <div class="qus">
         <strong>
-            You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it. <br>
+            6.You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it. <br>
             | P or p 	- PrepBytes      	| <br>
             | Z or z 	- Zenith         	| <br>
             | E or e 	- Expert Coder   	| <br>
@@ -258,6 +303,74 @@
             } else if(a=="D" || a=="d") {
               return "Data Structure"
             }
+          };
+    </pre> <hr>
+
+    <div class="qus">
+        <strong>
+            7. Find the maximum out of three numbers. <br>
+            Take three numbers and print the largest number among them if all of three are same print  −1. <br>
+            Note: You have to complete Max_out_of_three. No need to take any input.
+        </strong>
+    </div>
+    <pre>
+        const Max_out_of_three = (A,B,C) => {
+            if(A > B && A>C) {
+              return A
+            } else if(B > A && B>C) {
+              return B
+            } else if(C > A && C > B)  {
+              return C
+            } else {
+              return -1
+            }
+        };
+    </pre> <hr>
+
+    <div class="qus">
+        <strong>
+            8. You are given 3 distinct integers X,Y, and Z,and your task is to find and return the second smallest integer among the three provided integers. <br>
+            Note: You have to complete findSndSmallest function. No need to take any input.
+        </strong>
+    </div>
+    <pre>
+        const findSndSmallest = (x,y,z) => {
+            if((x>y)&&(x>z)) {
+            if(y>z)
+            return y;
+            else
+            return z;
+          } else if((y>x)&&(y>z)) {
+            if(x>z)
+            return x;
+            else
+            return z;
+          } else if((z>x)&&(z>y)) {
+            if(x>y)
+            return x;
+            else
+            return y;
+          }
+          };
+    </pre> <hr>
+
+    <div class="qus">
+        <strong>
+            9. Check whether the triangle is Acute or Obtuse <br>
+            Write a program takes takes three angles and checks whether the triangle is acute or obtuse. <br>
+            Note: You have to complete Triangle_Check. No need to take any input
+        </strong>
+    </div>
+    <pre>
+        const Triangle_Check = (A,B,C) => {
+            if(A + B + C == 180) {
+              if(A>90 || B > 90 || C > 90 ) {
+                return "obtuse"
+              } else if(A<90 && B < 90 && C < 90) {
+                return "acute"
+              }
+            }
+              
           };
     </pre> <hr>
     </div>
