@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: black;
+            padding: 0.4rem;
+            position: sticky;
+            top: 0px;
+        }
+        .container {
+            margin: 0rem 4rem 0rem 4rem;
+        }
+        .qus {
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style="text-align: center; color: white;">JAVASCRIPT HANDSON 1</h1>
+    </nav>
+    <div class="container">
+        <div class="qus">
+        <strong>1. Add two Numbers <br>
+            You are provided with two numbers A and B. Your task is to add these two numbers. <br>
+            Note: You have to complete AddTwoNumbers function. No need to take any input.</strong>
+        </div>
+        <pre>
+            const AddTwoNumbers = (a,b) => {
+                return a + b;
+            };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            2.Find if the conditions are obeyed or not? <br>
+            You are given two number first as A and second as B and check if both conditions (A < 10 and A > B ) are satisfied or not with the help of operators. <br>
+            Note: You have to complete Is_Valid function. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Is_Valid = (a,b) => {
+            if(a<10 && a>b) {
+            return true
+            } else {
+            return false
+            }
+        };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            3.Check the conditons <br>
+            You are given two numbers A and B. You need to do the following checks: <br>
+            if both are divisible by 10 console true. <br>
+            if both are not divisible by 10 console false. <br>
+            if one of them only is divisible by 10 console true. <br>
+            Use operator to do this. <br>
+            Note: You have to complete Check function. No need to take any input.
+            </strong>
+        </div>
+        <pre>
+            const Check = (A, B) => 
+            {
+              if(A%10===0 && B%10===0) {
+                return true
+              }else if(A%10===0 || B%10===0) {
+                return true;
+              } else {
+                return false
+              }
+            };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            4. Find the first digit of a 4 digit number <br>
+            You are provided a four digit number N only. Your task is to print out the first digit of that number. <br>
+            Note: You have to complete First_Digit function. No need to take any input. <br>
+            </strong>
+        </div>
+        <pre>
+            const First_Digit = (n) => {
+                a = n/1000;
+                b = parseInt(a)
+                return b
+             };
+        </pre> <hr>
+
+        <div class="qus">
+            <strong>
+            5. Find the last digit of a 4 digit number <br>
+            You are provided a four digit number N only. Your task is to print out the last digit of that number. <br>
+            Note: You have to complete Last_Digit function. No need to take any input. <br>
+            </strong>
+        </div>
+        <pre>
+            const Last_Digit = (n) => {
+                a = n%10
+                b = parseInt(a)
+                return b
+             };
+        </pre> <hr>
+
+    </div>
+</body>
+</html>
