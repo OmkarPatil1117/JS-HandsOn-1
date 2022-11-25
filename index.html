@@ -909,6 +909,34 @@
         </pre> <hr>
 
         <div class="qus">
+            <strong> 8. Plaindrome Check <br>
+                You are given a string S, Your task is to check wether the given string is a Palindrome or not. <br>
+                A Palindrome is a string, which turnout same when read in reverse direction. <br>
+                Example: "naman" is a Palindrome. <br>
+                String can contain both upppercase lowercase letters. <br>
+                Note: You have to complete Plain_Check function. No need to take any input.
+            </strong>
+        </div>
+        <pre> 
+            var Palin_Check = (str) =>
+            {
+            var arr  = str.split("");
+            var arr2 = str.split("").reverse();
+            var count = 0;
+            for(i=0; i < str.length; i++) {
+                if(arr[i] === arr2[i]) {
+                    count++
+                }
+            }
+            if(count  >= str.length) {
+                return "True"
+            } else {
+                return "False"
+            }
+            }
+        </pre> <hr>
+
+        <div class="qus">
             <strong> 9. Reverse the String You are given a string S, Your task is to Reverse the string. String can contain both upppercase lowercase letters. <br>
                 Note: You have to complete Reverse_String function. No need to take any input. 
             </strong>
