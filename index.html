@@ -792,6 +792,37 @@
         </pre> <hr>
 
         <div class="qus">
+            <strong> 2. Count the Heads <br>
+                Tina is given a string  S which contains the first letter of all the student names in her class. She got a curiosity to check how many people have their names starting from the same alphabet. So given a string  S , she decided to write a code that finds out the count of characters that occur more than once in the string. <br>
+                Note: You have to complete Count Head function. No need to take any input.
+            </strong>
+        </div>
+        <pre> 
+            var Count_Occ = (s) => {
+                let count = 0;
+                var arr2 = []
+                for(i=0; i <= s.length; i++) {
+                    count = 0;
+                    for(j=0; j < s.length; j++) {
+                        if(s[i] == s[j]) {
+                            count++
+                        }
+                }
+                if(count >= 2) {
+            
+                    if( !arr2.includes(s[i] + count)) {
+                    a = s[i] + count
+                    arr2.push(a)
+                  }
+                } 
+              }
+            
+              return arr2.sort().join("")
+            };
+             
+        </pre> <hr>
+
+        <div class="qus">
             <strong> 3. Count the Vowels <br>
                 You are given a string S containing both uppercase and lowercase letters. You need to find out the number of vowels in the given string. <br>
                 Note: You have to complete Count_Vowel function. No need to take any inpu
